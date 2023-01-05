@@ -10,7 +10,7 @@
             <span class="text-white"><i class="fab fa-whatsapp"></i></span>
         </a>
         <a href="#" target="_blank" class="item-4" title="cubicol">
-            <img src="./assets/img/icons/cubo.png" height="28">
+            <img src="./public/img/icons/cubo.png" height="28">
         </a>
     </div>
 

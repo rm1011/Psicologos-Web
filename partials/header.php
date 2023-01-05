@@ -48,6 +48,15 @@ switch ($pagina) {
 ?>
 
 <style>
+    .escudo {
+        display: none;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .abajo {
         /* background-color: #f4f4f4; */
         /* background: #000; */
@@ -58,18 +67,23 @@ switch ($pagina) {
     /* .abajo .navbar-light .navbar-nav .nav-link {
         color: #fff;
     } */
-
-    /* .abajo .bar-sup {
-        display: none;
-    } */
-
     .abajo .bar-sup2 {
         display: none;
         transition: .3s;
     }
 
+    .abajo .escudo {
+        display: block;
+    }
+
+    .abajo .navbar-nav {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
     header .navbar-nav .nav-item .activador {
-        color: var(--color4);
+        /* color: var(--color4); */
+        color: #ffc107;
         font-weight: bold;
     }
 
@@ -82,7 +96,6 @@ switch ($pagina) {
     }
 
     .dropdown-menu li {
-
         position: relative;
     }
 
@@ -140,16 +153,17 @@ switch ($pagina) {
 
     <div id="menu1">
         <nav class="navbar navbar-expand-lg navbar-light">
+            <img src="./public/img/icons/escudo.png" class="mr-3 escudo" height="120" id="logo">
             <button class="navbar-toggler d-lg-none" type="button" style="background-color:var(--color4);" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="background-color:var(--color4);"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item ">
                         <a class="nav-link fw-bold <?= $active1 ?>" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link fw-bold <?= $active2 ?>" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="me-2">NOSOTROS</span><i class="fas fa-caret-down"></i></a>
+                        <a class="nav-link fw-bold <?= $active2 ?>" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="me-2">NOSOTROS</span><i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="institucion.php">Institución</a>
                             <a class="dropdown-item" href="historia.php">Historia</a>

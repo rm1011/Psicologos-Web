@@ -1,110 +1,272 @@
+<style>
+    .topcontrol {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        opacity: 0.8;
+        cursor: pointer;
+        z-index: 100;
+        /* background: #00D553; */
+        /* width: 50px; */
+        /* height: 50px; */
+        /* padding-top: 6px; */
+        /* padding-left: 9px; */
+        /* border: 2px solid white; */
+        /* border-radius: 50%; */
+        transition: all 2 ease-in-out;
+    }
 
+    .topcontrol:hover {
+        transform: scale(1.06);
+    }
 
+    .topcontrol i {
+        color: var(--color1);
+        font-size: 46px;
+    }
 
-<footer class="container-fluid p-0 pt-4">
+    .topcontrol2 {
+        position: fixed;
+        bottom: 80px;
+        right: 80px;
+        /* opacity: 0.8; */
+        cursor: pointer;
+        z-index: 100;
+        width: 180px;
+        height: 30px;
+        background: #F8F9FA;
+        border-radius: 0.25rem;
+        border: 1px solid #dee2e6;
+        /* padding-top: 6px; */
+        /* padding-left: 9px; */
+        /* border-radius: 50%; */
+        transition: all 2 ease-in-out;
+    }
 
+    .topcontrol2 span {
+        text-align: center;
+        font-weight: bold;
+        color: var(--color1);
+        padding: 1rem 2rem;
+    }
 
+    .topcontrol4 {
+        position: fixed;
+        bottom: 230px;
+        /* right: 95%; */
+        right: 1%;
+        /* opacity: 0.8; */
+        cursor: pointer;
+        z-index: 100;
+        background-color: #FF0000;
+        width: 50px;
+        height: 50px;
+        padding-top: 4px;
+        padding-left: 8px;
+        /* border: 2px solid white; */
+        border-radius: 50%;
+        transition: all 3 ease-in-out;
+    }
 
+    .topcontrol4 i {
+        font-size: 36px;
+        color: #fff;
+        margin-top: 3px;
+        margin-left: -4px;
+    }
 
-<div  class="container " style="padding-top:1rem;padding-bottom:1rem;">
+    .topcontrol4:hover {
+        transform: scale(1.08);
+    }
 
-<div class="row ">
-    <div class="col-md-3 my-auto" style="background-image: linear-gradient(-90deg, var(--color4), transparent);border: 0;height: 8px;"></div>
-        
-    <div class="col-md-6 my-auto"><center><h2 style="color:var(--color2);font-weight: bold;"><i class="fas fa-id-card" aria-hidden="true"></i>&nbsp;CONTÁCTANOS</h2></center></div>
+    .topcontrol5 {
+        position: fixed;
+        /* bottom: 112px; */
+        bottom: 50px;
+        /* right: 95%; */
+        right: 1%;
+        /* opacity: 0.8; */
+        cursor: pointer;
+        z-index: 100;
+        /* background: rgb(123, 56, 174); */
+        background: linear-gradient(74deg, rgba(123, 56, 174, 1) 0%, rgba(237, 27, 32, 1) 37%, rgba(237, 32, 31, 1) 55%, rgba(236, 12, 35, 1) 67%, rgba(249, 202, 0, 1) 100%);
+        width: 50px;
+        height: 50px;
+        padding-top: 4px;
+        padding-left: 8px;
+        /* border: 2px solid white; */
+        border-radius: 50%;
+        transition: all 3 ease-in-out;
+    }
 
-     <div class="col-md-3 my-auto" style="background-image: linear-gradient(90deg, var(--color4), transparent); border: 0;height: 8px;"></div>
-</div>
+    .topcontrol5 i {
+        /* height: 28px; */
+        /* width: 32px; */
+        color: white;
+        font-size: 36px;
+        margin-top: 4px;
+        margin-left: 2px;
+    }
 
-</div>
-<br>
+    .topcontrol5:hover {
+        transform: scale(1.08);
+    }
 
+    .topcontrol6 {
+        position: fixed;
+        bottom: 110px;
+        /* right: 95%; */
+        right: 1%;
+        /* opacity: 0.8; */
+        cursor: pointer;
+        z-index: 100;
+        /* background-color: #00A884; */
+        background-color: #28C44C;
+        width: 50px;
+        height: 50px;
+        padding-top: 4px;
+        padding-left: 8px;
+        /* border: 2px solid white; */
+        border-radius: 50%;
+        transition: all 3 ease-in-out;
+    }
 
+    .topcontrol6 i {
+        /* height: 50px; */
+        /* width: 50px; */
+        font-size: 36px;
+        margin-top: 4px;
+        margin-left: 1px;
+        color: white;
+    }
 
-<div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Políticas de Privacidad</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <iframe src="#" width="100%" frameborder="0" height="580"></iframe>
+    .topcontrol6:hover {
+        transform: scale(1.08);
+    }
+
+    .topcontrol7 {
+        position: fixed;
+        bottom: 170px;
+        /* right: 95%; */
+        right: 1%;
+        /* opacity: 0.8; */
+        cursor: pointer;
+        z-index: 100;
+        background-color: #0B86EE;
+        width: 50px;
+        height: 50px;
+        padding-top: 4px;
+        padding-left: 8px;
+        /* border: 2px solid white; */
+        border-radius: 50%;
+        transition: all 3 ease-in-out;
+    }
+
+    .topcontrol7 i {
+        /* height: 33px; */
+        /* width: 33px; */
+        font-size: 36px;
+        color: #fff;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .topcontrol7:hover {
+        transform: scale(1.08);
+    }
+</style>
+<footer id="footer">
+
+    <div class="container-fluid" id="dates">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                    <div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./public/img/icons/escudo.png" alt="logo" height="100">
+                            <h4 class="ms-3 text-white">COLEGIO DE PSICÓLOGOS DEL PERÚ <br> CONSEJO DIRECTIVO REGIONAL I - LIMA</h4>
+                        </div>
+
+                        <div class="redes">
+                            <div class="red">
+                                <a class="yt" href="#" target="_blank">
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </a>
+                            </div>
+                            <div class="red">
+                                <a class="fb" href="#" target="_blank">
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                </a>
+                            </div>
+                            <div class="red">
+                                <a class="tw" href="#" target="_blank">
+                                    <span><i class="fab fa-twitter"></i></span>
+                                </a>
+                            </div>
+                            <div class="red">
+                                <a class="ig" href="#" target="_blank">
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 date-info">
+                    <h5>DIRECCION</h5>
+                    <div class="d-flex flex-column text">
+                        <p class="mb-2"> <i class="fas fa-map-marker-alt me-2"></i> Jr. Camilo Carrillo 164, Jesús María, Lima</p>
+                    </div>
+                    <h5>TELEFONOS</h5>
+                    <div class="d-flex flex-column text">
+                        <p class="mb-2"> <i class="fas fa-phone-alt me-2"></i> Informes: 952 130 045 / (01) 330 5390</p>
+                        <p class="mb-2"> <i class="fas fa-phone-alt me-2"></i> Tesorería: 986 776 409 / (01) 330 5389</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 date-info">
+                    <h5>CORREOS</h5>
+                    <div class="d-flex flex-column text">
+                        <a class="mb-2" href="mailto:informes@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> informes@cpsplima.pe</a>
+                        <a class="mb-2" href="mailto:tesoreria@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> tesoreria@cpsplima.pe</a>
+                        <a class="mb-2" href="mailto:capacitaciones@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> capacitaciones@cpsplima.pe</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-    
-    <div id="flechaarriba"class="" style="position: absolute; right:60px;background-color: transparent; font-size: 34px;">
-
-        <a href="#" class="" style="color:var(--color2);"><span><i class="fas fa-chevron-circle-up"></i></span></a>
-
-    </div>
-
-
-    <div class="contacto container py-3">
-        <div class="row">
-            <div class="col-12 col-lg-7 px-4">
-                <div>
-                    <img src="./assets/img/inicio/fachada.jpg" class="img-fluid img-thumbnail">
+    <section class="container-fluid barinf">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-start">
+                    <p class="mb-0 text-center" style="font-size: 14px;">Colegios Psicologos del Perú</p>
                 </div>
-                <div style="padding-top:0.8rem;">
-                         <span class="correofooter2"style="font-family:'cambria'; color:var(--color2);"><i class="fab fa-whatsapp"></i><span style="word-wrap: break-word;">&nbsp;&nbsp;Whatsapp : +51 967744390 / +51 984276012</span>
-                </div>
-                                
-                <div style="padding-top:0.8rem;padding-bottom:0.8rem;">
-                    <span style="font-family:'cambria';color:var(--color2);"><i class="fas fa-phone-alt"></i><span>&nbsp; Teléfono: </span>&nbsp;01 4815860</span>
-                </div>
-                <div style="padding-top:0.8rem;padding-bottom:0.8rem;">
-                    <span style="font-family:'cambria';color:var(--color2);"><i class="fas fa-map-marker-alt"></i><span>&nbsp; Dirección: </span>&nbsp;Av. Amancaes 701. Urb. El Bosque – Rímac</span>
+                <div class="col d-flex justify-content-end">
+                    <p class="mb-0 text-center" style="font-size: 14px;">Desarrollado por <a href="https://www.cubicol.pe/agencia/" target="_blank" style="color: var(--color2);">Sensoft Solutiones</a></p>
                 </div>
             </div>
-
-
-            <div class="col-12 col-lg-5">
-                <div class="row">
-                    <div class="col12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.262143360871!2d-77.0309019!3d-12.0217847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb9d2df81069c193!2sI.E.P.%20Bautista!5e0!3m2!1ses!2spe!4v1639423994220!5m2!1ses!2spe" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                <h3 class="fw-bold">Realice su consulta</h3>
-                <div class="form-group pt-2" >
-                    <input type="text" class="form-control mb-3 fw-bold" placeholder="Ingrese nombre y apellidos">
-                    <input type="text" class="form-control mb-3 fw-bold" placeholder="Ingrese su correo">
-                    <textarea class="form-control mb-4 fw-bold" rows="4" placeholder="Escribe..."></textarea>
-                    <button class="btn btn-warning text-white fw-bold py-2"style="background-color:var(--color2);border-color:var(--color2);">Enviar&nbsp; <i class="fas fa-chevron-circle-right"></i></button>
-                    <div class="form-check form-check-inline ms-3" data-bs-toggle="modal" data-bs-target="#terminosModal">
-                        <input type="checkbox" class="form-check-input" id="checkone" value="si">
-                        <label class="form-check-label" for="checkone">
-                          <p id="terminos">  "He leído y acepto las politicas de privacidad"</p>
-                        </label>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-
-
-
         </div>
-    </div>
-    
-    <div class="bar-inf mt-3">
-        <a href="">Colegio Bautista <i class="far fa-copyright"></i> 2021</a>
-        <a href="https://www.cubicol.pe/" target="_blank" class="ms-auto">Desarrollado por <span>Sensoft Solutions<span></a>
+    </section>
 
-    </div>
-    <div class="bar-inf2"style="position: fixed; bottom: 40px; right: 10px; z-index: 999;">
-  <a href="https://api.whatsapp.com/send?phone=+51967744390" target="_blank" class="text-success">
-      <span class="py-2 px-3 border bg-light rounded">¿Necesita ayuda?</span>
-      <img src="./assets/img/icons/whatsapp.png" width="50" class="ms-2">
-  </a>
-</div>
-<script>
 
-</script>
+    <div class="topcontrol4">
+        <a href="" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <div class="topcontrol5">
+        <a href="" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div class="topcontrol6">
+        <a href="https://api.whatsapp.com/send?phone=51987654321" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <div class="topcontrol7">
+        <a href="" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </div>
+
 </footer>
-

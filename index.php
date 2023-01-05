@@ -97,7 +97,7 @@
             padding: 4rem 0;
             background-image:
                 linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url('https://www.institutosouthern.edu.pe/public/img/web/bg-notice.jpg');
+                url('./public/img/web/bg-noticia.jpg');
             background-size: cover;
             background-position: center;
             z-index: 99;
@@ -109,7 +109,7 @@
 
         #noticias img {
             width: 100%;
-            height: 220px;
+            height: 300px;
             object-fit: cover;
         }
 
@@ -119,7 +119,7 @@
             text-align: center;
             font-weight: bold;
             position: absolute;
-            top: 200px;
+            top: 286px;
             /* left: 40%; */
             /* left: 126px; */
             left: 30%;
@@ -141,11 +141,54 @@
         #noticias a:hover {
             color: var(--color2);
         }
+
+        #eventos .item {
+            /* margin-top: 3rem; */
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #eventos .date {
+            text-align: center;
+            border-right: 1px solid #000;
+        }
+
+        #eventos .date h3 {
+            font-size: 70px;
+            color: var(--color1);
+        }
+
+        #eventos .date h6 {
+            color: var(--color1);
+            font-weight: 600
+        }
+
+        #eventos .text a {
+            font-size: 24px;
+            color: var(--color2);
+            font-weight: 600;
+            /* font-family: 'Roboto Slab', serif; */
+        }
+
+        #eventos .text p {
+            margin-top: 1rem;
+            color: var(--color7);
+        }
+
+        #eventos .imagen img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
     </style>
 
     <?php include_once './partials/header.php'; ?>
 
-    <?php include_once './partials/redes.php'; ?>
+    <!-- <?php include_once './partials/redes.php'; ?> -->
 
     <section id="baner">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -171,14 +214,34 @@
         </div>
     </section>
 
+    <section class="container" id="bienvenida">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-md">
+                <h2>BIENVENIDA</h2>
+                <div class="line"></div>
+                <h5 class="mt-3 mb-4">Colegio de Psicólogos del Perú. Consejo Directivo Regional I Lima</h5>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi excepturi fuga laudantium. Facere quo quasi culpa, explicabo totam autem placeat. Architecto placeat dolorem aspernatur iure error facere necessitatibus nihil consectetur.
+                    Cumque repellat ipsa, aspernatur doloribus accusantium vitae dignissimos dolores ex repudiandae nihil at eos debitis, error cupiditate deserunt saepe iusto eveniet doloremque voluptas provident hic, asperiores sint? Cupiditate, vitae repellat?
+                    Corrupti ipsum nam soluta perspiciatis qui sunt, pariatur illo quaerat delectus debitis voluptate dolores recusandae? Similique, vero. Tempora ipsa esse, nulla saepe voluptate, harum deleniti ipsam nam dolores recusandae obcaecati.
+                    Voluptates eum, dolorum adipisci, assumenda minima mollitia non nulla voluptatem voluptas enim quisquam placeat expedita. Possimus cumque omnis sunt labore consequatur nesciunt dolores quibusdam.
+                </p>
+            </div>
+            <div class="col-lg-5 col-md d-flex justify-content-center">
+                <img src="./public/img/web/bienvenido.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </section>
+
     <div class="container" id="servicios">
         <div class="row">
-            <!-- <p class="text-center">Te brindamos el servicio de traslado que necesitas para cada ocasión.</p> -->
-            <h2 class="text-center" style="color: #000">SERVICIOS AL AFILIADO</h2>
-            <div class="line mx-auto mb-5"></div>
+            <div class="col">
+                <h2 class="title">SERVICIOS AL AFILIADO</h2>
+                <div class="line"></div>
+            </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-lg-4 col-md my-3">
                 <a href="" class="card shadow rounded p-2 h-100">
                     <div class="crop">
@@ -219,8 +282,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="text-white title">Noticias</h2>
-                    <div class="separador" style="background: white;"></div>
+                    <h2 class="text-white title">NOTICIAS</h2>
+                    <div class="line" style="background: white;"></div>
                 </div>
             </div>
             <div class="row mt-5">
@@ -230,14 +293,94 @@
                         <h6 class="text-center">01 / 01 / 2023</h6>
                     </div>
                     <br>
-                    <a href="/pub/sabias-que">FELIZ AÑO NUEVO</a>
+                    <a href="">FELIZ AÑO NUEVO</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <img src="./public/img/galeria/noticia2.jpg" alt="">
+                        <h6 class="text-center">11 / 10 / 2023</h6>
+                    </div>
+                    <br>
+                    <a href="">CAPACITACIONES VIRTUALES</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <img src="./public/img/galeria/noticia3.png" alt="">
+                        <h6 class="text-center">01 / 09 / 2023</h6>
+                    </div>
+                    <br>
+                    <a href="">CAPACITACIONES VIRTUALES NOVIEMBRE</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container" id="eventos" style="margin-top: 5rem;">
+        <div class="row" style="margin-bottom: 3rem;">
+            <div class="col">
+                <h2 class="title">EVENTOS</h2>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row item">
+            <div class="col-md-3">
+                <div class="date">
+                    <h3>01</h3>
+                    <h6>Septiembre</h6>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text">
+                    <a href="#">CONFERENCIA: ORIENTACIÓN VOCACIONAL Y PROFESIONAL</a>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Rem, non et illo voluptatem voluptatibus nulla aut quam unde
+                        pariatur porro atque cumque quas
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="imagen">
+                    <img src="./public/img/galeria/evento1.png" alt="evento">
+                </div>
+            </div>
+        </div>
+        <div class="row item">
+            <div class="col-md-3">
+                <div class="date">
+                    <h3>01</h3>
+                    <h6>Septiembre</h6>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text">
+                    <a href="#">CONFERENCIA: ORIENTACIÓN VOCACIONAL Y PROFESIONAL</a>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Rem, non et illo voluptatem voluptatibus nulla aut quam unde
+                        pariatur porro atque cumque quas
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="imagen">
+                    <img src="./public/img/galeria/evento1.png" alt="evento">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- <?php include_once './partials/footer.php'; ?> -->
+    <div class="container" style="margin-top: 5rem; margin-bottom: 5rem;">
+        <div class="row">
+            <div class="col">
+                <h2 class="title">UBICACIÓN</h2>
+                <div class="line"></div>
+            </div>
+        </div>
+        <iframe class="shadow-lg mt-5" style="border: 16px solid #fff; border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.563062506913!2d-77.03999048587939!3d-12.073555545685043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c90d9cad36c3%3A0x98d91132b6bf9684!2sColegio%20de%20Psic%C3%B3logos%20del%20Per%C3%BA%20CDR%20I-%20Lima%2C%20SEDE%20LEGAL%20E%20HIST%C3%93RICA!5e0!3m2!1ses-419!2spe!4v1672937562889!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <?php include_once './partials/footer.php'; ?>
 
 
     <!-- CARROUSEL -->
