@@ -7,7 +7,7 @@
   /* --color2:#b7862a; */
   --color2:#ffc12b;
   --color4:#545454;
-  --color5:#ffff;
+  --color5:#0b0f5f;
   --color6:#ffc12b; 
 }
 
@@ -59,7 +59,7 @@ header .bar-sup {
   flex-direction: row;
   align-items: center;
   padding: 4px 7.5%;
-  background: var(--color4);
+  background: var(--color5);
 }
 header .bar-sup2 {
   padding-top: 1.5rem;
@@ -67,10 +67,10 @@ header .bar-sup2 {
 }
 
 header .bar-sup :hover{
-  color:var(--color5);
+  color: #fff;
 }
 header .bar-sup a {
-  color:var(--color5);
+  color:#fff;
   font-size: 0.85em;
 }
 header ul.navbar-nav > li{

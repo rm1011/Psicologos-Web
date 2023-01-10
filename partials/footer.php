@@ -174,13 +174,20 @@
     .topcontrol7:hover {
         transform: scale(1.08);
     }
+
+    .boton {
+        background: var(--color1);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
 </style>
 <footer id="footer">
 
     <div class="container-fluid" id="dates">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                <div class="col-12 col-lg-6 col-md-6 d-flex justify-content-center">
                     <div>
                         <div class="d-flex justify-content-center align-items-center">
                             <img src="./public/img/icons/escudo.png" alt="logo" height="100">
@@ -189,17 +196,17 @@
 
                         <div class="redes">
                             <div class="red">
-                                <a class="yt" href="#" target="_blank">
+                                <a class="yt" href="https://www.youtube.com/channel/UCe3d1HnqhS3n1YjTjhBmo-A" target="_blank">
                                     <span><i class="fab fa-youtube"></i></span>
                                 </a>
                             </div>
                             <div class="red">
-                                <a class="fb" href="#" target="_blank">
+                                <a class="fb" href="https://www.facebook.com/CDRILimaColegiodepsicologos" target="_blank">
                                     <span><i class="fab fa-facebook-f"></i></span>
                                 </a>
                             </div>
                             <div class="red">
-                                <a class="tw" href="#" target="_blank">
+                                <a class="tw" href="https://twitter.com/colegiopsicolo1" target="_blank">
                                     <span><i class="fab fa-twitter"></i></span>
                                 </a>
                             </div>
@@ -211,7 +218,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 col-lg-3 date-info">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <form id="form-contacto" onsubmit="enviarCorreo(event)">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 my-1">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input name="nombres" type="text" required="" class="form-control" placeholder="Nombres">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 my-1">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input name="Número de Colegiatura" type="text" required="" class="form-control" placeholder="Número de Colegiatura">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg col-md my-1">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input name="correo" type="email" class="form-control" required="" placeholder="Correo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 my-1">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <textarea name="consulta" rows="4" class="form-control" required="" placeholder="Ingresa tu Consulta"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 my-1 d-flex justify-content-between align-items-center">
+                                <button type="submit" class="boton">
+                                    Enviar
+                                </button>
+                                <div class="form-check" data-bs-toggle="modal" data-bs-target="#modalPoliticas">
+                                    <input class="form-check-input" type="checkbox" value="" required="">
+                                    <label class="form-check-label text-white" for="flexCheckDefault">
+                                        He leído y acepto las políticas de privacidad
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="col-12 col-md-3 col-lg-3 date-info">
                     <h5>DIRECCION</h5>
                     <div class="d-flex flex-column text">
                         <p class="mb-2"> <i class="fas fa-map-marker-alt me-2"></i> Jr. Camilo Carrillo 164, Jesús María, Lima</p>
@@ -221,15 +275,15 @@
                         <p class="mb-2"> <i class="fas fa-phone-alt me-2"></i> Informes: 952 130 045 / (01) 330 5390</p>
                         <p class="mb-2"> <i class="fas fa-phone-alt me-2"></i> Tesorería: 986 776 409 / (01) 330 5389</p>
                     </div>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3 date-info">
+                </div> -->
+                <!-- <div class="col-12 col-md-3 col-lg-3 date-info">
                     <h5>CORREOS</h5>
                     <div class="d-flex flex-column text">
                         <a class="mb-2" href="mailto:informes@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> informes@cpsplima.pe</a>
                         <a class="mb-2" href="mailto:tesoreria@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> tesoreria@cpsplima.pe</a>
                         <a class="mb-2" href="mailto:capacitaciones@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> capacitaciones@cpsplima.pe</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -249,7 +303,7 @@
 
 
     <div class="topcontrol4">
-        <a href="" target="_blank">
+        <a href="https://www.youtube.com/channel/UCe3d1HnqhS3n1YjTjhBmo-A" target="_blank">
             <i class="fab fa-youtube"></i>
         </a>
     </div>
@@ -259,12 +313,12 @@
         </a>
     </div>
     <div class="topcontrol6">
-        <a href="https://api.whatsapp.com/send?phone=51987654321" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=51952130045" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
     <div class="topcontrol7">
-        <a href="" target="_blank">
+        <a href="https://www.facebook.com/CDRILimaColegiodepsicologos" target="_blank">
             <i class="fab fa-facebook-f"></i>
         </a>
     </div>

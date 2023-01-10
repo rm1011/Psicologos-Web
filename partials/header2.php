@@ -49,12 +49,14 @@ switch ($pagina) {
 
 <style>
     .escudo {
-        display: none;
+        height: 100px;
     }
 
     .navbar-nav {
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 0;
     }
 
     .abajo {
@@ -76,10 +78,10 @@ switch ($pagina) {
         display: block;
     }
 
-    .abajo .navbar-nav {
+    /* .abajo .navbar-nav {
         margin-left: auto;
         margin-right: 0;
-    }
+    } */
 
     header .navbar-nav .nav-item .activador {
         /* color: var(--color4); */
@@ -123,7 +125,7 @@ switch ($pagina) {
 <div id="header-top"></div>
 <header class="fixed-top" id="header">
 
-    <div class="bar-sup">
+    <div class="bar-sup ">
         <div class="ms-auto">
             <a href="#" class="me-3" target="_blank"><i class="fab fa-facebook"></i><span> Facebook</span></a>
             <a href="#" class="me-3" target="_blank"><i class="fab fa-youtube "></i><span> Youtube</span></a>
@@ -131,7 +133,7 @@ switch ($pagina) {
         </div>
     </div>
 
-    <div class="bar-sup2">
+    <!-- <div class="bar-sup2">
         <a class="navbar-brand animate__animated animate__zoomIn" href="index.php">
             <div class="container">
                 <div class="row">
@@ -149,11 +151,11 @@ switch ($pagina) {
                 </div>
             </div>
         </a>
-    </div>
+    </div> -->
 
     <div id="menu1">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <img src="./public/img/icons/escudo.png" class="mr-3 escudo" height="120" id="logo">
+        <nav class="navbar navbar-expand-lg navbar-light border-0">
+            <img src="./public/img/icons/escudo.png" class="mr-3 escudo" id="logo">
             <button class="navbar-toggler d-lg-none" type="button" style="background-color:var(--color4);" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="background-color:var(--color4);"></span>
             </button>
@@ -227,12 +229,14 @@ switch ($pagina) {
                     <li class="nav-item fw-bold">
                         <a class="nav-link <?= $active7 ?>" href="proyeccion.php">PROYECCIÓN SOCIAL</a>
                     </li>
+
                 </ul>
             </div>
         </nav>
     </div>
 
 </header>
+
 
 <script>
     var height = document.getElementById('header').clientHeight;

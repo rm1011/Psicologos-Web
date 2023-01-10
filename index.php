@@ -245,22 +245,22 @@
             <div class="col-lg-4 col-md my-3">
                 <a href="" class="card shadow rounded p-2 h-100">
                     <div class="crop">
-                        <img src="./public/img/web/servicios_colegiatura.jpg" class="w-100 rounded shadow-sm">
+                        <img src="./public/img/web/servicios_conoce-tu-psicologo.jpg" class="w-100 rounded shadow-sm">
                     </div>
                     <div class="card-body text-center py-3">
-                        <p class="fw-bold" style="font-size: 20px; color: var(--color2)"> COLEGIATURA </p>
-                        <p>Si está interesado en conseguir la colegiatura aquí puede ver los requisitos.</p>
+                        <p class="fw-bold" style="font-size: 20px; color: var(--color2)">PSICOLOGOS HABILITADOS</p>
+                        <p>Verifique online si su Psicólogo se encuentra HABILITADO.</p>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-md my-3">
                 <a href="" class="card shadow rounded p-2 h-100">
                     <div class="crop">
-                        <img src="./public/img/web/servicios_conoce-tu-psicologo.jpg" class="w-100 rounded shadow-sm">
+                        <img src="./public/img/web/servicios_colegiatura.jpg" class="w-100 rounded shadow-sm">
                     </div>
                     <div class="card-body text-center py-3">
-                        <p class="fw-bold" style="font-size: 20px; color: var(--color2)">CONOCE A TU PSICÓLOGO</p>
-                        <p>Verifique online si su Psicólogo se encuentra HABILITADO.</p>
+                        <p class="fw-bold" style="font-size: 20px; color: var(--color2)">TRAMITES </p>
+                        <p>Si está interesado en conseguir la colegiatura aquí puede ver los requisitos.</p>
                     </div>
                 </a>
             </div>
@@ -270,7 +270,7 @@
                         <img src="./public/img/web/servicios_consultorios-psicologicos.jpg" class="w-100 rounded shadow-sm">
                     </div>
                     <div class="card-body text-center py-3">
-                        <p class="fw-bold" style="font-size: 20px; color: var(--color2)">CONSULTORIOS PSICOLÓGICOS</p>
+                        <p class="fw-bold" style="font-size: 20px; color: var(--color2)">CONVENIOS</p>
                         <p>Disponemos de diversos espacios para el desarrollo de las psicoterapias y consultas psicológicas.</p>
                     </div>
                 </a>
@@ -298,7 +298,7 @@
                 <div class="col-md-4">
                     <div class="item">
                         <img src="./public/img/galeria/noticia2.jpg" alt="">
-                        <h6 class="text-center">11 / 10 / 2023</h6>
+                        <h6 class="text-center">11 / 10 / 2022</h6>
                     </div>
                     <br>
                     <a href="">CAPACITACIONES VIRTUALES</a>
@@ -306,7 +306,7 @@
                 <div class="col-md-4">
                     <div class="item">
                         <img src="./public/img/galeria/noticia3.png" alt="">
-                        <h6 class="text-center">01 / 09 / 2023</h6>
+                        <h6 class="text-center">01 / 09 / 2022</h6>
                     </div>
                     <br>
                     <a href="">CAPACITACIONES VIRTUALES NOVIEMBRE</a>
@@ -366,6 +366,43 @@
                 <div class="imagen">
                     <img src="./public/img/galeria/evento1.png" alt="evento">
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="noticias" style="margin-top: 5rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-white title">CENTRO DE CAPACITACIONES</h2>
+                    <div class="line" style="background: white;"></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <a href="" class="col-md-4">
+                    <div class="item">
+                        <img src="./public/img/galeria/evento1.png" alt="">
+                        <h6 class="text-center">CURSOS</h6>
+                    </div>
+                    <br>
+                    <!-- <a href="">CURSOS</a> -->
+                </a>
+                <a href="" class="col-md-4">
+                    <div class="item">
+                        <img src="./public/img/galeria/evento1.png" alt="">
+                        <h6 class="text-center">TALLERES</h6>
+                    </div>
+                    <br>
+                    <!-- <a href="">TALLERES</a> -->
+                </a>
+                <a href="" class="col-md-4">
+                    <div class="item">
+                        <img src="./public/img/galeria/evento1.png" alt="">
+                        <h6 class="text-center">CONFERENCIAS</h6>
+                    </div>
+                    <br>
+                    <!-- <a href="">CONFERENCIAS</a> -->
+                </a>
             </div>
         </div>
     </div>
