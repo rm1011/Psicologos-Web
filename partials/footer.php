@@ -176,10 +176,16 @@
     }
 
     .boton {
-        background: var(--color1);
+        background: var(--color2);
         color: white;
         padding: 10px 20px;
         border-radius: 6px;
+        transition: .3s all;
+    }
+
+    .boton:hover {
+        background: var(--color1);
+        transform: scale(1.08);
     }
 </style>
 <footer id="footer">

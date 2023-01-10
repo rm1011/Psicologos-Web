@@ -41,7 +41,9 @@ switch ($pagina) {
     case 'libreria.php':
         $active6 .= ' activador';
         break;
-    case 'proyeccion.php':
+    case 'articulos_colegas.php':
+    case 'videos.php':
+    case 'ptv_radio.php':
         $active7 .= ' activador';
         break;
 }
@@ -173,7 +175,6 @@ switch ($pagina) {
                             <!-- <a class="dropdown-item" href="ptrabajo.php">Plan de Trabajo</a> -->
                         </div>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link fw-bold <?= $active3 ?>" href="" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="me-2">SERVICIOS</span><i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -217,15 +218,20 @@ switch ($pagina) {
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="noticias.php">Noticias</a>
                             <a class="dropdown-item" href="eventos.php">Eventos</a>
-                            <a class="dropdown-item" href="galeria.php">Galería</a>
+                            <a class="dropdown-item" href="galerias.php">Galería</a>
                             <a class="dropdown-item" href="calendarizacion.php">Calendarización</a>
                         </div>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link <?= $active6 ?>" href="libreria.php">LIBRERÍA</a>
                     </li>
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link <?= $active7 ?>" href="proyeccion.php">PROYECCIÓN SOCIAL</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold <?= $active7 ?>" href="" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="me-2">PROYECCIÓN SOCIAL</span><i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="articulos_colegas.php">Articulos de Colegas</a>
+                            <a class="dropdown-item" href="videos.php">Videos</a>
+                            <a class="dropdown-item" href="ptv_radio.php">Programas de TV o Radio</a>
+                        </div>
                     </li>
                 </ul>
             </div>

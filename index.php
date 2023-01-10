@@ -243,7 +243,7 @@
 
         <div class="row mt-5">
             <div class="col-lg-4 col-md my-3">
-                <a href="" class="card shadow rounded p-2 h-100">
+                <a href="phabilitados.php" class="card shadow rounded p-2 h-100">
                     <div class="crop">
                         <img src="./public/img/web/servicios_conoce-tu-psicologo.jpg" class="w-100 rounded shadow-sm">
                     </div>
@@ -254,7 +254,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md my-3">
-                <a href="" class="card shadow rounded p-2 h-100">
+                <a href="tramites.php" class="card shadow rounded p-2 h-100">
                     <div class="crop">
                         <img src="./public/img/web/servicios_colegiatura.jpg" class="w-100 rounded shadow-sm">
                     </div>
@@ -414,8 +414,32 @@
                 <div class="line"></div>
             </div>
         </div>
-        <iframe class="shadow-lg mt-5" style="border: 16px solid #fff; border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.563062506913!2d-77.03999048587939!3d-12.073555545685043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c90d9cad36c3%3A0x98d91132b6bf9684!2sColegio%20de%20Psic%C3%B3logos%20del%20Per%C3%BA%20CDR%20I-%20Lima%2C%20SEDE%20LEGAL%20E%20HIST%C3%93RICA!5e0!3m2!1ses-419!2spe!4v1672937562889!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row justify-content-between align-items-center mt-5">
+            <div class="col-lg-7">
+                <iframe class="shadow-lg" style="border: 16px solid #fff; border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.563062506913!2d-77.03999048587939!3d-12.073555545685043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c90d9cad36c3%3A0x98d91132b6bf9684!2sColegio%20de%20Psic%C3%B3logos%20del%20Per%C3%BA%20CDR%20I-%20Lima%2C%20SEDE%20LEGAL%20E%20HIST%C3%93RICA!5e0!3m2!1ses-419!2spe!4v1672937562889!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4">
+                <h5>DIRECCION</h5>
+                <div class="d-flex flex-column text">
+                    <p class="mb-3"> <i class="fas fa-map-marker-alt me-2"></i> Jr. Camilo Carrillo 164, Jesús María, Lima</p>
+                </div>
+
+                <h5 class="mt-4" style="border-top: 2px solid var(--color5); padding-top: 20px;">TELEFONOS</h5>
+                <div class="d-flex flex-column text">
+                    <p class="mb-3"> <i class="fas fa-phone-alt me-2"></i> Informes: 952 130 045 / (01) 330 5390</p>
+                    <p class="mb-3"> <i class="fas fa-phone-alt me-2"></i> Tesorería: 986 776 409 / (01) 330 5389</p>
+                </div>
+
+                <h5 class="mt-4" style="border-top: 2px solid var(--color5); padding-top: 20px;">CORREOS</h5>
+                <div class="d-flex flex-column text">
+                    <a class="mb-3" href="mailto:informes@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> informes@cpsplima.pe</a>
+                    <a class="mb-3" href="mailto:tesoreria@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> tesoreria@cpsplima.pe</a>
+                    <a class="mb-3" href="mailto:capacitaciones@cpsplima.pe" target="_blank"> <i class="fas fa-envelope me-2"></i> capacitaciones@cpsplima.pe</a>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <?php include_once './partials/footer.php'; ?>
 

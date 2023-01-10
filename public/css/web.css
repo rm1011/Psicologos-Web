@@ -7,7 +7,7 @@
   /* --color2:#b7862a; */
   --color2:#ffc12b;
   --color4:#545454;
-  --color5:#0b0f5f;
+  --color5:#10145c;
   --color6:#ffc12b; 
 }
 
@@ -155,7 +155,7 @@ color:white;
 text-align:center;
 }
 .navbar-light .navbar-nav .nav-link {
-  color:var(--color5);
+  color: #FFF;
 }
 
 .text-justify {
