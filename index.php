@@ -184,6 +184,68 @@
             height: 200px;
             object-fit: cover;
         }
+
+        #capacitacion {
+            padding: 4rem 0;
+            background-image:
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('./public/img/web/bg-noticia.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 99;
+        }
+
+        #capacitacion .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #capacitacion .card img {
+            object-fit: cover;
+            height: 380px;
+        }
+
+        #capacitacion .card .message {
+            position: absolute;
+            /* margin-top: 110px; */
+            height: 0px;
+            background-color: rgba(0, 0, 0, .7);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+        }
+
+        #capacitacion .card:hover .message {
+            opacity: 1;
+            height: 50px;
+        }
+
+        .text-scroll {
+            max-height: 350px;
+            overflow-y: auto;
+            padding: 0 2%;
+        }
+
+        .text-scroll::-webkit-scrollbar {
+            background: whitesmoke;
+            width: 5px;
+            border-radius: 6px;
+        }
+
+        .text-scroll::-webkit-scrollbar-thumb {
+            background: var(--color1);
+        }
+
+        .text-scroll::-webkit-scrollbar-track {
+            width: 5px;
+        }
     </style>
 
     <?php include_once './partials/header.php'; ?>
@@ -219,13 +281,26 @@
             <div class="col-lg-6 col-md">
                 <h2>BIENVENIDA</h2>
                 <div class="line"></div>
-                <h5 class="mt-3 mb-4">Colegio de Psicólogos del Perú. Consejo Directivo Regional I Lima</h5>
-                <p class="text-justify">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi excepturi fuga laudantium. Facere quo quasi culpa, explicabo totam autem placeat. Architecto placeat dolorem aspernatur iure error facere necessitatibus nihil consectetur.
-                    Cumque repellat ipsa, aspernatur doloribus accusantium vitae dignissimos dolores ex repudiandae nihil at eos debitis, error cupiditate deserunt saepe iusto eveniet doloremque voluptas provident hic, asperiores sint? Cupiditate, vitae repellat?
-                    Corrupti ipsum nam soluta perspiciatis qui sunt, pariatur illo quaerat delectus debitis voluptate dolores recusandae? Similique, vero. Tempora ipsa esse, nulla saepe voluptate, harum deleniti ipsam nam dolores recusandae obcaecati.
-                    Voluptates eum, dolorum adipisci, assumenda minima mollitia non nulla voluptatem voluptas enim quisquam placeat expedita. Possimus cumque omnis sunt labore consequatur nesciunt dolores quibusdam.
-                </p>
+                <br>
+                <div class="text-scroll mt-3 mb-4">
+                    <h5 class="mt-3 mb-4">Colegio de Psicólogos del Perú. Consejo Directivo Regional I Lima</h5>
+                    <p class="text-justify">
+                        Hoy en dia tenemos 2 espacios en el que convivimos los seres humanos, uno que es el convencional donde siempre hemos interactuado y otro es, el espacio virtual que nos ofrece la tecnología moderna desde hace algunas décadas. Ya resulta imposible imaginar el prescindir de alguna de ellas.
+                    </p>
+                    <p class="text-justify">
+                        Es el curso cotidiano de nuestra vida en el que nuestra actividad la desarrollamos en espacios físicos y con el contacto directo y, a través del mundo virtual, ahora también desarrollamos nuestras actividades en modo “virtual”. Así tenemos un local físico que funciona a puertas abiertas, en donde estamos dispuestos a recibirlos y a atenderlos.
+                        Ahora les presento nuestro espacio virtual renovado que esperamos que sea tan importante como el espacio físico. Con servicios, información y oportunidades lo ponemos a disposición de ustedes, nuestros colegas colegiados.
+                    </p>
+                    <p class="text-justify">
+                        La especial diferencia con los sitios web anteriores, es que este es un portal donde además tendremos un espacio exclusivo de intranet para la interacción en comunidad. Facilitando tramites, posibilitando información y fomentando las oportunidades económicas.
+                    </p>
+                    <p class="text-justify">
+                        Un portal es un espacio de internet e intranet en donde en el primero esta la información externa que todo el publico puede acceder para conocer de nosotros los psicólogos del Perú (Lima) y las oportunidades que ponemos a disposición de ellos. En la segunda área ingresamos a través del logueo (inicio de sesión) para pasar a la intranet en donde encontraremos información personalizada y exclusiva de los psicólogos colegiados y habilitados.
+                    </p>
+                    <p class="text-justify">
+                        Te invitamos a recorrer este nuevo local en la gran nube del internet y descubrir las posibilidades que te ofrecemos y que, contando con tu importante participación e innovación podremos ir mejorándolo cada vez mas.
+                    </p>
+                </div>
             </div>
             <div class="col-lg-5 col-md d-flex justify-content-center">
                 <img src="./public/img/web/bienvenido.jpg" width="100%" alt="">
@@ -370,7 +445,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="noticias" style="margin-top: 5rem;">
+    <div class="container-fluid" id="capacitacion" style="margin-top: 5rem;">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -379,30 +454,33 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <a href="" class="col-md-4">
-                    <div class="item">
-                        <img src="./public/img/galeria/evento1.png" alt="">
-                        <h6 class="text-center">CURSOS</h6>
+
+                <div class="col-md-4 my-4 px-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="message">
+                            <a href="cursos.php" class="text-white" style="cursor:pointer;">CURSOS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
+                        </div>
+                        <img src="./public/img/galeria/CONFERENCIA 13 DE MARZO.jpg" class="rounded" width="100%">
                     </div>
-                    <br>
-                    <!-- <a href="">CURSOS</a> -->
-                </a>
-                <a href="" class="col-md-4">
-                    <div class="item">
-                        <img src="./public/img/galeria/evento1.png" alt="">
-                        <h6 class="text-center">TALLERES</h6>
+                </div>
+                <div class="col-md-4 my-4 px-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="message">
+                            <a href="talleres.php" class="text-white" style="cursor:pointer;">TALLERES &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
+                        </div>
+                        <img src="./public/img/galeria/TALLER 28 Y 31 DE MARZO.jpg" class="rounded" width="100%">
                     </div>
-                    <br>
-                    <!-- <a href="">TALLERES</a> -->
-                </a>
-                <a href="" class="col-md-4">
-                    <div class="item">
-                        <img src="./public/img/galeria/evento1.png" alt="">
-                        <h6 class="text-center">CONFERENCIAS</h6>
+                </div>
+                <div class="col-md-4 my-4 px-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="message">
+                            <a href="conferencias.php" class="text-white" style="cursor:pointer;">CONFERENCIAS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
+                        </div>
+                        <img src="./public/img/galeria/CONFERENCIA 1 DE MARZO.jpg" class="rounded" width="100%">
                     </div>
-                    <br>
-                    <!-- <a href="">CONFERENCIAS</a> -->
-                </a>
+                </div>
+
+
             </div>
         </div>
     </div>

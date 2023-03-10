@@ -175,7 +175,7 @@
         transform: scale(1.08);
     }
 
-    .boton {
+    .botonFormulario {
         background: var(--color2);
         color: white;
         padding: 10px 20px;
@@ -183,7 +183,7 @@
         transition: .3s all;
     }
 
-    .boton:hover {
+    .botonFormulario:hover {
         background: var(--color1);
         transform: scale(1.08);
     }
@@ -258,7 +258,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 my-1 d-flex justify-content-between align-items-center">
-                                <button type="submit" class="boton">
+                                <button type="submit" class="botonFormulario">
                                     Enviar
                                 </button>
                                 <div class="form-check" data-bs-toggle="modal" data-bs-target="#modalPoliticas">

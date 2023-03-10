@@ -62,30 +62,35 @@
             color: var(--color2);
         }
 
-        #iniciando {
+        .lista {
             margin-top: 5rem;
             margin-bottom: 5rem;
         }
 
-        #iniciando .card .message {
-            position: absolute;
-            margin-top: 110px;
-            height: 0px;
-            background-color: rgba(0, 0, 0, .7);
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            opacity: 0;
-            transition: all .3s ease-in-out;
+        .lista .card {
+            transition: transform .3s ease-in-out;
         }
 
-        #iniciando .card:hover .message {
-            opacity: 1;
-            height: 50px;
+        .lista .card:hover {
+            transform: scale(1.06);
+        }
+
+        .list-group .list-group-item:hover {
+            background: var(--color2);
+            /* color: #fff; */
+        }
+
+        .text {
+            margin-top: 1rem;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-align: justify;
+            color: #555;
+            font-size: 17px;
+            line-height: 1.6;
         }
     </style>
 
@@ -100,7 +105,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                                <li class="breadcrumb-item text-white">Programas de TV o Radio</li>
+                                <li class="breadcrumb-item text-white">Entrevistas</li>
                             </ol>
                         </nav>
                     </div>
@@ -109,34 +114,40 @@
         </div>
     </div>
 
-    <section class="container px-4" id="iniciando">
-        <div class="row">
-
-            <div class="col-md-4 my-4 px-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="message">
-                        <a class="text-white" style="cursor:pointer;" onclick="buscar('172')">VER MÁS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
-                    </div>
-                    <img src="./public/img/galeria/tv1.jpg" class="rounded" width="100%" height="280">
+    <section class="container lista">
+        <div class="row justify-content-between">
+            <div class="col-md-7">
+                <h3 style="color: var(--color5);">PROBLEMAS DE APRENDIZAJE</h3>
+                <hr style="color: var(--color5); height: 2px;">
+                <br>
+                <div class="d-flex justify-content-center">
+                    <img src="./public/img/galeria/entrevista1.jpeg" width="100%" alt="">
                 </div>
+                <br>
+                <p>A su paso por lima, Milagros Bustamante, psicoterapeuta experta en problemas de aprendizaje, nos concedio una elocuente entrevista sobre el rol fundamental del psicólogo educativo en las escuelas.
+                    <br>
+
+                    ¿Cuál es el objetivo del psicólogo educativo:
+                    <br>
+                    Ps.- Detectar si el estudiante presenta alguna dificultad en el área escolar y en base a eso establecer si se encuentra el conflicto en el área neurológica o emocional para implementar un plan de intervención para tener como resultado un buen desempeño escolar.
+                    <br>
+                    E.- ¿Cuál es la dificultad se presenta con mayor frecuencia en el área educativa de los casos que se derivan hacia usted:
+                    <br>
+                    Ps.- Principalmente la alta de interés por parte de los padres ya que no asisten a la escuela cuando son citados por parte del psicólogo o el maestro de grupo.
+                    <br>
+                    E.- ¿Cuál es el modelo de intervención que le es mas útil?
+                    <br>
+                    Ps.- El juego con los estudiantes ya que es momentáneo y es muy dinámico desarrollando mucha información sin tener que estar mucho tiempo estáticos empleando preguntas $cuestionarios%. también se le ponen trabajos para estimular el área que esta afectada.
+                    <br>
+                    E.- ¿Cómo integran a los padres de familia para llevar a cabo el modelo de intervención utilizado por usted:
+                    <br>
+                    Ps.- Se les cita a los padres" se les #ace una entrevista pidiendo autorización para trabajar con su #i!o y con ellos también" se les brinda la técnica o modelo a seguir para modificar la conducta de este. ) el no asistir los padres tras ser citados varias veces se empieza a trabajar con el estudiante ya que la situación lo requiere" sin tener el consentimiento de estos.
+                </p>
             </div>
 
-            <div class="col-md-4 my-4 px-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="message">
-                        <a class="text-white" style="cursor:pointer;" onclick="buscar('172')">VER MÁS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
-                    </div>
-                    <img src="./public/img/galeria/tv1.jpg" class="rounded" width="100%" height="280">
-                </div>
-            </div>
-
-            <div class="col-md-4 my-4 px-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="message">
-                        <a class="text-white" style="cursor:pointer;" onclick="buscar('172')">VER MÁS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
-                    </div>
-                    <img src="./public/img/galeria/tv1.jpg" class="rounded" width="100%" height="280">
-                </div>
+            <div class="col-md-3">
+                <iframe style="border: 6px solid var(--color5); border-radius: 10px;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCDRILimaColegiodepsicologos&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <!-- <iframe style="border: 10px solid var(--color5); border-radius: 10px;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCDRILimaColegiodepsicologos&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
             </div>
 
         </div>

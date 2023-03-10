@@ -62,9 +62,51 @@
             color: var(--color2);
         }
 
-        .texto {
+        #cursos {
             margin-top: 5rem;
             margin-bottom: 5rem;
+        }
+
+        #cursos .card {
+            transition: .3s;
+        }
+
+        #cursos .card .crop {
+            overflow: hidden;
+        }
+
+        #cursos .card .crop img {
+            transition: all .5s ease-in-out;
+            object-fit: cover;
+            height: 360px;
+            width: 100%;
+        }
+
+
+        #cursos .card .crop:hover img {
+            transform: scale(1.10);
+        }
+
+        #cursos .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: none;
+        }
+
+        #cursos .texto {
+            margin-top: 1rem;
+        }
+
+        #cursos .card .boton {
+            color: #fff;
+            background: var(--color1);
+            padding: 10px 30px;
+            transition: all .3s ease-in-out;
+        }
+
+        #cursos .card .boton:hover {
+            background: var(--color2);
         }
     </style>
 
@@ -88,12 +130,132 @@
         </div>
     </div>
 
-    <section class="container texto">
-        <div class="row justify-content-between">
-            <div class="col">
-                <div>
-                    <h3 class="mb-4 titulo">Estamos Trabajando</h3>
-
+    <section class="container texto" id="cursos">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 30 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Flores que curan un complemento en la psicoterapia</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 27 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Psicología positiva, cómo aplicarla en la vida diaria</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 23 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Presencia en medios digitales</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 16 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Atención en Violencia escolar y su gestión en la escuela</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 13 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Cómo desarrollar la disciplina funcional en nuestros hijos</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA GRATUITA 9 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Psicología del amor</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 6 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">El rol del psicólogo en el nuevo contexto educativo</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 2 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">gestión del talento humano</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/CONFERENCIA 1 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Intervención clínica en trastornos de ansiedad</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

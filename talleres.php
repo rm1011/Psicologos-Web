@@ -62,9 +62,51 @@
             color: var(--color2);
         }
 
-        .texto {
+        #cursos {
             margin-top: 5rem;
             margin-bottom: 5rem;
+        }
+
+        #cursos .card {
+            transition: .3s;
+        }
+
+        #cursos .card .crop {
+            overflow: hidden;
+        }
+
+        #cursos .card .crop img {
+            transition: all .5s ease-in-out;
+            object-fit: cover;
+            height: 360px;
+            width: 100%;
+        }
+
+
+        #cursos .card .crop:hover img {
+            transform: scale(1.10);
+        }
+
+        #cursos .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: none;
+        }
+
+        #cursos .texto {
+            margin-top: 1rem;
+        }
+
+        #cursos .card .boton {
+            color: #fff;
+            background: var(--color1);
+            padding: 10px 30px;
+            transition: all .3s ease-in-out;
+        }
+
+        #cursos .card .boton:hover {
+            background: var(--color2);
         }
     </style>
 
@@ -88,12 +130,76 @@
         </div>
     </div>
 
-    <section class="container texto">
-        <div class="row justify-content-between">
-            <div class="col">
-                <div>
-                    <h3 class="mb-4 titulo">Estamos Trabajando</h3>
-
+    <section class="container texto" id="cursos">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/TALLER 28 Y 31 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Modificación de Conducta en niños y adolescentes</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/TALLER 21 Y 29 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Abordaje de los Protocolos de la Violencia Escolar</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/TALLER 14 Y 17 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Seguridad y Salud Ocupacional</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/TALLER 8,15,22 Y 24 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">Diseño de sesiones psicoterapéuticas para todas las etapas</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md my-3">
+                <div class="card shadow rounded p-2 h-100">
+                    <div class="crop">
+                        <img src="./public/img/galeria/TALLER 7 Y 10 DE MARZO.jpg">
+                    </div>
+                    <div class="card-body text-center py-3">
+                        <p class="titulo">ORIENTACIÓN VOCACIONAL</p>
+                        <p class="texto">Marzo 2023</p>
+                        <div class="my-4">
+                            <a class="boton" href="">Ver más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -62,30 +62,35 @@
             color: var(--color2);
         }
 
-        #iniciando {
+        .lista {
             margin-top: 5rem;
             margin-bottom: 5rem;
         }
 
-        #iniciando .card .message {
-            position: absolute;
-            margin-top: 110px;
-            height: 0px;
-            background-color: rgba(0, 0, 0, .7);
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            opacity: 0;
-            transition: all .3s ease-in-out;
+        .lista .card {
+            transition: transform .3s ease-in-out;
         }
 
-        #iniciando .card:hover .message {
-            opacity: 1;
-            height: 50px;
+        .lista .card:hover {
+            transform: scale(1.06);
+        }
+
+        .list-group .list-group-item:hover {
+            background: var(--color2);
+            /* color: #fff; */
+        }
+
+        .text {
+            margin-top: 1rem;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-align: justify;
+            color: #555;
+            font-size: 17px;
+            line-height: 1.6;
         }
     </style>
 
@@ -100,7 +105,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                                <li class="breadcrumb-item text-white">Programas de TV o Radio</li>
+                                <li class="breadcrumb-item text-white">Entrevistas</li>
                             </ol>
                         </nav>
                     </div>
@@ -109,35 +114,60 @@
         </div>
     </div>
 
-    <section class="container px-4" id="iniciando">
-        <div class="row">
+    <section class="container lista">
+        <div class="row justify-content-between">
 
-            <div class="col-md-4 my-4 px-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="message">
-                        <a class="text-white" style="cursor:pointer;" onclick="buscar('172')">VER MÁS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
+            <div class="col-lg-9 my-4">
+                <div class="row">
+                    <div class="col-md-4 my-3">
+                        <a href="entrevistav1.php" class="card h-100 shadow-sm">
+                            <div class="card-body pb-2 bg-white">
+                                <h5 class="text-titulo mt-1 mb-2" style="font-size: 16px;">
+                                    PROBLEMAS DE APRENDIZAJE
+                                </h5>
+                                <p class="text-justify text fs-6" style="color: rgb(60, 60, 60);">
+                                    A su paso por lima, Milagros Bustamante, psicoterapeuta experta en problemas de aprendizaje, nos concedio una elocuente entrevista sobre el rol fundamental del psicólogo educativo en las escuelas.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex flex-row align-items-center bg-white px-3 py-2">
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="ms-1" style="font-size: 16px;">20-01-2023</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <img src="./public/img/galeria/tv1.jpg" class="rounded" width="100%" height="280">
+                    <div class="col-md-4 my-3">
+                        <a href="entrevistav1.php" class="card h-100 shadow-sm">
+                            <div class="card-body pb-2 bg-white">
+                                <h5 class="text-titulo mt-1 mb-2" style="font-size: 16px;">
+                                    PROBLEMAS DE APRENDIZAJE
+                                </h5>
+                                <p class="text-justify text fs-6" style="color: rgb(60, 60, 60);">
+                                    A su paso por lima, Milagros Bustamante, psicoterapeuta experta en problemas de aprendizaje, nos concedio una elocuente entrevista sobre el rol fundamental del psicólogo educativo en las escuelas.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex flex-row align-items-center bg-white px-3 py-2">
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="ms-1" style="font-size: 16px;">20-01-2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4 my-4 px-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="message">
-                        <a class="text-white" style="cursor:pointer;" onclick="buscar('172')">VER MÁS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
-                    </div>
-                    <img src="./public/img/galeria/tv1.jpg" class="rounded" width="100%" height="280">
+            <!-- <div class="col-lg-3 my-3">
+                <h4 class="mb-3" style="color: var(--color5);">Actividades</h4>
+                <div class="list-group shadow-sm">
+                    <a href="eventos.php" class="list-group-item">
+                        <i class="far fa-folder-open"></i>&nbsp;&nbsp; Eventos</a>
+                    <a href="galeria.php" class="list-group-item ">
+                        <i class="far fa-folder-open"></i>&nbsp;&nbsp; Galería </a>
+                    <a href="calendarizacion.php" class="list-group-item ">
+                        <i class="far fa-folder-open"></i>&nbsp;&nbsp; Calendarización </a>
                 </div>
-            </div>
-
-            <div class="col-md-4 my-4 px-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="message">
-                        <a class="text-white" style="cursor:pointer;" onclick="buscar('172')">VER MÁS &nbsp; <i class="fas fa-arrow-alt-circle-right"></i></a>
-                    </div>
-                    <img src="./public/img/galeria/tv1.jpg" class="rounded" width="100%" height="280">
-                </div>
-            </div>
+            </div> -->
 
         </div>
     </section>

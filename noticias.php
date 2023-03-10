@@ -79,6 +79,19 @@
             background: var(--color2);
             /* color: #fff; */
         }
+
+        .text {
+            margin-top: 1rem;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-align: justify;
+            color: #555;
+            font-size: 17px;
+            line-height: 1.6;
+        }
     </style>
 
     <?php include_once './partials/header2.php'; ?>
@@ -112,7 +125,7 @@
                                 <h5 class="text-titulo mt-1 mb-2" style="font-size: 16px;">
                                     FELIZ AÑO NUEVO
                                 </h5>
-                                <p class="text-justify fs-6" style="color: rgb(60, 60, 60);">
+                                <p class="text-justify text fs-6" style="color: rgb(60, 60, 60);">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. In distinctio blanditiis reprehenderit pariatur. Aliquam sit repudiandae quod doloremque repellat </p>
                             </div>
                             <div class="card-footer d-flex flex-row align-items-center bg-white px-3 py-2">
@@ -129,7 +142,7 @@
                                 <h5 class="text-titulo mt-1 mb-2" style="font-size: 16px;">
                                     CAPACITACIONES VIRTUALES
                                 </h5>
-                                <p class="text-justify fs-6" style="color: rgb(60, 60, 60);">
+                                <p class="text-justify text fs-6" style="color: rgb(60, 60, 60);">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. In distinctio blanditiis reprehenderit pariatur. Aliquam sit repudiandae quod doloremque repellat </p>
                             </div>
                             <div class="card-footer d-flex flex-row align-items-center bg-white px-3 py-2">
@@ -146,7 +159,7 @@
                                 <h5 class="text-titulo mt-1 mb-2" style="font-size: 16px;">
                                     CAPACITACIONES VIRTUALES NOVIEMBRE
                                 </h5>
-                                <p class="text-justify fs-6" style="color: rgb(60, 60, 60);">
+                                <p class="text-justify text fs-6" style="color: rgb(60, 60, 60);">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. In distinctio blanditiis reprehenderit pariatur. Aliquam sit repudiandae quod doloremque repellat </p>
                             </div>
                             <div class="card-footer d-flex flex-row align-items-center bg-white px-3 py-2">

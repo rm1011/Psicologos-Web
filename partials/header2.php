@@ -233,9 +233,9 @@ switch ($pagina) {
                             <a class="dropdown-item" href="articulos_colegas.php">Articulos de Colegas</a>
                             <a class="dropdown-item" href="videos.php">Videos</a>
                             <a class="dropdown-item" href="ptv_radio.php">Programas de TV o Radio</a>
+                            <a class="dropdown-item" href="entrevista.php">Entrevistas</a>
                         </div>
                     </li>
-
                 </ul>
             </div>
         </nav>
